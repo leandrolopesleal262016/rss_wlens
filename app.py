@@ -162,7 +162,7 @@ HTML = """
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Feed RSS → Sugestões de Post</title>
+  <title>Feed RSS → Sugestões de Post WLENS</title>
   <style>
     :root { --bg:#0f172a; --panel:#111827; --muted:#1f2937; --text:#e2e8f0; --link:#93c5fd; }
     *{box-sizing:border-box}
