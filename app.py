@@ -21,32 +21,43 @@ app = Flask(__name__)
 
 # Lista unificada: originais + novos populares
 FEEDS = [
-    # 🌍 Originais
-    "https://feeds.bbci.co.uk/news/rss.xml?edition=int",
-    "https://www.theguardian.com/world/rss",
-    "https://www.aljazeera.com/xml/rss/all.xml",
-    "https://apnews.com/index.rss",
-    "https://neilpatel.com/br/blog/feed/",
-    "https://rockcontent.com/br/blog/feed/",
-    "https://www.rdstation.com/blog/feed/",
-    "https://blog.hubspot.com/marketing/rss.xml",
-    "https://contentmarketinginstitute.com/feed/",
-    "https://www.archdaily.com.br/br/rss",
-    "https://casa.abril.com.br/feed/",
-    "https://www.archdaily.com/rss",
-    # 🌍 Notícias globais
-    "http://feeds.reuters.com/reuters/worldNews",
-    "http://rss.cnn.com/rss/edition_world.rss",
-    "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
-    "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada",
-    # 💡 Tecnologia
-    "http://feeds.feedburner.com/TechCrunch/",
-    "https://www.wired.com/feed/rss",
-    "https://www.technologyreview.com/feed/",
-    # 📈 Negócios
-    "https://hbr.org/feed",
-    "https://www.forbes.com/business/feed/",
-    "https://www.ft.com/rss/world",
+    # 🆕 Marketing & Social (relevantes p/ agência)
+    "https://searchengineland.com/feed",
+    "https://www.searchenginejournal.com/feed/",
+    "https://www.semrush.com/blog/feed",
+    "https://www.socialmediaexaminer.com/feed/",
+    "https://newsroom.pinterest.com/en/feed/news.xml",
+    "https://newsroom.pinterest.com/en/feed/pinsights.xml",
+    "https://moz.com/posts/rss/blog",
+    "https://ahrefs.com/blog/feed",
+    # (Opcional) Social Media Today — costuma funcionar em /feeds/news
+    "https://www.socialmediatoday.com/feeds/news",
+    # # 🌍 Originais
+    # "https://feeds.bbci.co.uk/news/rss.xml?edition=int",
+    # "https://www.theguardian.com/world/rss",
+    # "https://www.aljazeera.com/xml/rss/all.xml",
+    # "https://apnews.com/index.rss",
+    # "https://neilpatel.com/br/blog/feed/",
+    # "https://rockcontent.com/br/blog/feed/",
+    # "https://www.rdstation.com/blog/feed/",
+    # "https://blog.hubspot.com/marketing/rss.xml",
+    # "https://contentmarketinginstitute.com/feed/",
+    # "https://www.archdaily.com.br/br/rss",
+    # "https://casa.abril.com.br/feed/",
+    # "https://www.archdaily.com/rss",
+    # # 🌍 Notícias globais
+    # "http://feeds.reuters.com/reuters/worldNews",
+    # "http://rss.cnn.com/rss/edition_world.rss",
+    # "https://rss.nytimes.com/services/xml/rss/nyt/World.xml",
+    # "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada",
+    # # 💡 Tecnologia
+    # "http://feeds.feedburner.com/TechCrunch/",
+    # "https://www.wired.com/feed/rss",
+    # "https://www.technologyreview.com/feed/",
+    # # 📈 Negócios
+    # "https://hbr.org/feed",
+    # "https://www.forbes.com/business/feed/",
+    # "https://www.ft.com/rss/world",
 ]
 
 STOP = set("""
